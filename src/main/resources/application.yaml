@@ -1,0 +1,18 @@
+application-description: Student REST API with MongoDB
+application-version: 1.0.0
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: root
+      database: students_db
+      port: 27017
+      host: mongodb
+      auto-index-creation: true
+
+jwt-config:
+  jwtSecret: mongo-db-app
+  jwtAccessTokenExpirationMs: 90000 #0
+  jwtRefreshTokenExpirationMs: 1000000000
